@@ -159,7 +159,7 @@ header a img{
 }
 /*landing page */
 .landing-page-bg{
-    background:linear-gradient(rgba(43, 43, 43, 0.26),rgba(43, 43, 43, 0.26)),url("./images/maniBg.jpg") no-repeat;
+    background:linear-gradient(rgba(43, 43, 43, 0.26),rgba(43, 43, 43, 0.26)),url("../images/maniBg.jpg") no-repeat;
     background-size:cover;
     background-attachment: fixed;
     position: relative;
