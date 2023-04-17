@@ -586,7 +586,7 @@ width: 70%;
   margin: auto;
   background-color: transparent;
   width: 70%;
-  height: 700px;
+  height: 900px;
   perspective: 1000px;
 }
 
@@ -614,7 +614,6 @@ width: 70%;
   transform: rotateY(180deg);
 }
 
-
 @media only screen and (max-width: 780px) {
   
   .image-section{
@@ -635,6 +634,16 @@ width: 70%;
   }
   .text-on-book h3{
     font-size:0.9em;
+  }
+  .flip-card-inner .note-section{
+    width: 95%;
+  }
+  .flip-card-inner .note-section p{
+    width: 100%;
+  }
+  .flip-card-inner .note-section h2{
+    font-size: 40px;
+    margin-top:-50px;
   }
 }
 @media only screen and (max-width: 572px) {
