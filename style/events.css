@@ -112,6 +112,7 @@ p.event-header{
   height:600px;
   padding-top: 50px;
   padding-bottom: 50px;
+  margin-top: 50px;
 }
 .swiper2 .swiper-slide {
   background-position: center;
@@ -126,8 +127,8 @@ p.event-header{
 .portrait .mySlides3{
   height: 350px;
 }
-.mySlides video{
-  height: 200px;
+.swiper-slide video{
+  height: 100%;
   width: 100%;
 }
 .imageSlides video{

@@ -100,6 +100,7 @@ function openNav() {
     },
     pagination: {
       el: ".swiper-pagination",
+      clickable: true,
     },
   });
   }
@@ -124,6 +125,7 @@ function openNav() {
     },
     pagination: {
       el: ".swiper-pagination",
+      clickable: true,
     },
   });
   }
