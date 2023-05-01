@@ -241,6 +241,50 @@ border-radius: 10px;
   margin-bottom: 50px;
 }
 
+/* statistics page */
+
+.grid-container{
+  display: grid;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  width: 95%;
+  margin: auto;
+}
+
+.statistics-box{
+  border-radius: 9px;
+  height: 500px;
+  margin: auto;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 35px #00000011;
+}
+.chart-container{
+  height: 80%;
+}
+.statistics-box p{
+  width:90%;
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+  color: #4e4e4e;
+}
+.chart1{
+  grid-row: 1 / 4;
+  border: 1px solid;
+}
+.chart2{
+
+
+}
+
+
+
+
+
+
 @media only screen and (max-width: 1200px) {
   .main-meeting-img {
     height: 500px;
@@ -264,6 +308,18 @@ border-radius: 10px;
     -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
+  }
+
+  .slide2images{
+    border-radius: 9px;
+    width: 80%;
+    margin: auto;
+    height: 400px;
+  }
+  .slide2images img{
+    height: 400px;
+    width: 100%;
+    border-radius: 9px;
   }
 }
 @media screen and (max-width: 600px) {

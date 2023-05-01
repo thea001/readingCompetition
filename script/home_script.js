@@ -132,3 +132,25 @@ function openNav() {
   function focuse(id){
     document.getElementById(id).focus();
   }
+
+  //statistics charts script
+  function getCharts(){
+               const ctx = document.getElementById('myChart2');
+          
+            new Chart(ctx, {
+              type: 'doughnut',
+              data: {
+                labels: ['ذكور','إناث'],
+                datasets: [{
+                  label: 'نسبة المشاركة',
+                  data: [17781,16860],
+                  borderWidth: 1
+                }]
+              },
+              options: {
+                maintainAspectRatio:false,
+                responsive:true,
+                
+              }
+            });
+  }
