@@ -244,13 +244,11 @@ border-radius: 10px;
 /* statistics page */
 
 .grid-container{
-  display: grid;
-  gap: 20px;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 10px;
-  width: 95%;
+  width: 98%;
   margin: auto;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .statistics-box{
@@ -272,22 +270,18 @@ border-radius: 10px;
   color: #4e4e4e;
 }
 .chart1{
-
-
-
-  }
-
-.chart2{
-
-grid-column-start: 1;
-grid-column-end: 3;
+width:30%;
 }
 .chart2{
-
-
+  width: 60%;
+}
+.chart3,.chart4,.chart5{
+width: 30%;
 }
 
-
+[class*="chart"] {
+  margin: 5px;
+}
 
 
 
@@ -327,6 +321,13 @@ grid-column-end: 3;
     height: 400px;
     width: 100%;
     border-radius: 9px;
+  }
+
+  /*charts responsive style*/
+  [class*="chart"] {
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 600px) {

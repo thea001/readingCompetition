@@ -51,10 +51,14 @@ function openNav() {
   var slide1Index = 0;
   var slide2Index = 0;
   var slide3Index = 0;
+  var slide4Index = 0;
+  var slide5Index = 0;
   var slides0 = document.getElementsByClassName("mySlides0");
   var slides1 = document.getElementsByClassName("mySlides1");
   var slides2 = document.getElementsByClassName("mySlides2");
   var slides3 = document.getElementsByClassName("mySlides3");
+  var slides4 = document.getElementsByClassName("mySlides4");
+  var slides5 = document.getElementsByClassName("mySlides5");
   showSlides();
 
   function showSlides() {
@@ -62,18 +66,26 @@ function openNav() {
     removeActive(slides1);
     removeActive(slides2);
     removeActive(slides3);
+    removeActive(slides4);
+    removeActive(slides5);
     slide0Index++;
     slide1Index++;
     slide2Index ++;
     slide3Index ++;
+    slide4Index ++;
+    slide5Index ++;
     if (slide0Index > slides0.length) {slide0Index = 1}
     if (slide1Index > slides1.length) {slide1Index = 1}
     if (slide2Index > slides2.length) {slide2Index = 1}
     if (slide3Index > slides3.length) {slide3Index = 1}
+    if (slide4Index > slides4.length) {slide4Index = 1}
+    if (slide5Index > slides5.length) {slide5Index = 1}
      slides0[slide0Index-1]?.classList.add("active");
      slides1[slide1Index-1]?.classList.add("active");
      slides2[slide2Index-1]?.classList.add("active");
      slides3[slide3Index-1]?.classList.add("active");
+     slides4[slide4Index-1]?.classList.add("active");
+     slides5[slide5Index-1]?.classList.add("active");
     setTimeout(showSlides, 5000); // Change image every 5 seconds
   }
   function removeActive(slides){
