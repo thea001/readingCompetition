@@ -133,11 +133,53 @@ function openNav() {
     document.getElementById(id).focus();
   }
 
-  //statistics charts script
+//statistics charts script
+//first chart bars
+
+const ctx1 = document.getElementById('myChart1');     
+new Chart(ctx1, {
+  type: 'bar',
+  data: {
+    labels: ['عام(حكومي)','خاص (اهلي)'],
+    datasets: [{
+      label: 'نسبة المشاركة',
+      data: [93,18],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    maintainAspectRatio:false,
+    responsive:true,
+    
+  }
+});
+  // line chart
   function getCharts(){
-               const ctx = document.getElementById('myChart2');
-          
-            new Chart(ctx, {
+   
+    const ctx2 = document.getElementById('myChart2');     
+    new Chart(ctx2, {
+      type: 'line',
+      data: {
+        labels: [2021,2022,2023],
+        datasets: [{
+          label: 'نسب المشاركة',
+          data: [2540,3133,34641],
+          fill: false,
+          borderColor: '#FCB343',
+          tension: 0.1
+        }]
+      },
+      options: {
+        maintainAspectRatio:false,
+        responsive:true,
+        
+      }
+    });
+
+
+     //donut chart
+            const ctx3 = document.getElementById('myChart3');     
+            new Chart(ctx3, {
               type: 'doughnut',
               data: {
                 labels: ['ذكور','إناث'],
@@ -153,4 +195,46 @@ function openNav() {
                 
               }
             });
+
+            //polar chart 
+                //Doughnut chart
+                const ctx4 = document.getElementById('myChart4');     
+                new Chart(ctx4, {
+                  type: 'polarArea',
+                  data: {
+                    labels: ['العدد الجملي المدارس المسجلة','العدد الجملي للمدارس المشاركة'],
+                    datasets: [{
+                      label: 'نسبة المشاركة',
+                      data: [119,40],
+                      borderWidth: 1
+                    }]
+                  },
+                  options: {
+                    maintainAspectRatio:false,
+                    responsive:true,
+                    
+                  }
+                });
+
+                //horizontal bar chart
+                const ctx5 = document.getElementById('myChart5');  
+                new Chart(ctx5, {
+                  type: 'pie',
+                  data: {
+                    labels: [2021,2022,2023],
+                    datasets: [{
+                      label: 'نسبة المشاركة',
+                      data: [6,17,28],
+                      borderWidth: 1,
+                      backgroundColor: [
+                        'rgba(54, 162, 235, 0.9)',
+                        'rgba(255, 99, 132, 0.9)',
+                        'rgba(252, 185, 86, 0.9)'
+                      ]
+                    }]
+                  },
+                
+                  hoverOffset: 4
+               
+              });
   }

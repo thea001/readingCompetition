@@ -272,8 +272,15 @@ border-radius: 10px;
   color: #4e4e4e;
 }
 .chart1{
-  grid-row: 1 / 4;
-  border: 1px solid;
+
+
+
+  }
+
+.chart2{
+
+grid-column-start: 1;
+grid-column-end: 3;
 }
 .chart2{
 
