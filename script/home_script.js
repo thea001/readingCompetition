@@ -95,26 +95,18 @@ function openNav() {
     }
   }
   function swiper1(){
-  var swiper = new Swiper(".mySwiper", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    rewind: true,
-
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 3,
-      slideShadows: true,
-      rewind: true,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
+    var swiper = new Swiper(".mySwiper2", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+    });
   }
   function swiper2(){
   var passports = new Swiper(".mySwiper1", {

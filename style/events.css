@@ -131,6 +131,35 @@ p.event-header{
   height: 100%;
   width: 100%;
 }
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #FCB343;
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: #FCB343;
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
 .imageSlides video{
   height: 450px;
   margin-top: -100px;
@@ -183,6 +212,13 @@ p.event-header{
   color: #FCB343;
   animation: animLinks 30s ease-in-out 2s infinite;
 }
+.linkContainer a:nth-child(6){
+  margin-top: 100px;
+  margin-left: -200px;
+  color: #FCB343;
+  animation: animLinks 16s ease-in-out 2s infinite;
+}
+
 
 .main-meeting-img{
   width: 600px;
