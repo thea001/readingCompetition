@@ -389,6 +389,17 @@ h1.main-header,.story-zone h1{
   color:#FCB343 ;
   margin: 10px;
 }
+/*disabled button */
+.disabled-link{
+  opacity: 0.4s!important;
+  user-select: none;
+  color: #35353533 !important;
+  border: 1px solid #35353533 !important;
+}
+.disabled-link:hover{
+  background-color: transparent !important;
+}
+
 section.story-section{
   width: 90%;
   margin: auto;
@@ -698,5 +709,13 @@ width: 70%;
   .book-container img ,.box img{
     width: 120px;
     height: 200px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .mani-book-container img{
+    width: 800px;
+    height:500px;
+    z-index: -1;
   }
 }
