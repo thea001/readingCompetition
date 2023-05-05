@@ -282,7 +282,7 @@ border-radius: 10px;
 .grid-container{
   width: 98%;
   margin: auto;
-  display:flex;
+  display:block;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -316,7 +316,8 @@ width: 30%;
 }
 
 [class*="chart"] {
-  margin: 5px;
+  margin: auto;
+  margin-top: 20px;
 }
 
 
