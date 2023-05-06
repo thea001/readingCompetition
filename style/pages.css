@@ -538,6 +538,13 @@ h1.important-text{
   margin: 15px !important;
   margin-bottom: 0px;
 }
+h2.important-text{
+  color: #d1302e !important;
+  text-align: center;
+  animation: scaleBadge 2s ease-out both infinite;
+  width: 40%;
+  margin: auto;
+}
 .brailFont{
   font-family:brailleFont2;
   
