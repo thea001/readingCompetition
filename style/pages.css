@@ -552,7 +552,6 @@ h2.important-text{
 .important-box{
   width: 95% !important;
   margin: auto;
-  margin-top: -130px;
 }
 .important{
   background: linear-gradient(rgba(117, 153, 143, 0.74) 0%, rgba(2, 53, 59, 0.027) 100%) !important;
@@ -567,6 +566,10 @@ h2.important-text{
 .blind-girl-pic img{
   z-index: 2;
   margin: 0;
+}
+#sign-image{
+  direction: rtl;
+  float: left;
 }
 .note-section{
   width:80%;
@@ -716,6 +719,12 @@ width: 70%;
   .book-container img ,.box img{
     width: 120px;
     height: 200px;
+  }
+  .blind-girl-pic{
+    display: none;
+  }
+  h1.important-text{
+    display: block;
   }
 }
 
