@@ -46,7 +46,13 @@ function openNav() {
     navBar.style.width = "0%";
   }
 
-
+function shakeNav(){
+  const clicked = localStorage.getItem('clicked');
+  if(clicked != 'true'){
+    document.getElementById("btnNavBar")?.classList.add("shake");
+    localStorage.setItem('clicked','true');
+  }
+}
   var slide0Index = 0;
   var slide1Index = 0;
   var slide2Index = 0;

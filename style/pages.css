@@ -634,7 +634,25 @@ width: 70%;
 .flip-card-back {
   transform: rotateY(180deg);
 }
+/*contact page */
+/*begin*/
+.contact-line{
+  width: 100%;
+  text-align: center;
+}
+.contact-line h2{
+  font-size: 30px;
+  margin:20px 0px;
+  color: #283E94;
+}
+.contact-line p{
+  color: #C42027;
+}
+.contact-line a:hover{
+color: #28B45E;
+}
 
+/*end*/
 @media only screen and (max-width: 780px) {
   
   .image-section{
