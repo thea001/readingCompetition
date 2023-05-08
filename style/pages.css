@@ -620,7 +620,7 @@ width: 70%;
   transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card:active .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -684,6 +684,10 @@ color: #28B45E;
     font-size: 40px;
     margin-top:-50px;
   }
+  .note-section i{
+    margin-top: 50px;
+    display: block;
+  }
 }
 @media only screen and (max-width: 572px) {
   img.nav-logos{
@@ -743,6 +747,9 @@ color: #28B45E;
   }
   h1.important-text{
     display: block;
+  }
+  .flip-card{
+    width: calc(100% - 10px);
   }
 }
 
